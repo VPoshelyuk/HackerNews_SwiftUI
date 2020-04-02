@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  DetailView.swift
 //  HackerNws_SwiftUI
 //
 //  Created by Slava Pashaliuk on 4/2/20.
@@ -7,15 +7,20 @@
 //
 
 import SwiftUI
+import WebKit
 
-struct ContentView: View {
+struct DetailView: View {
+    
+    let url: String?
+    
     var body: some View {
-        Text("Hello, World!")
+        WebView(urlString: url)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        DetailView(url: "https://www.google.com/")
     }
 }
+

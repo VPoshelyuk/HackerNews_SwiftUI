@@ -13,6 +13,10 @@
 		E78EF34C24364C8900EB5938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E78EF34B24364C8900EB5938 /* Assets.xcassets */; };
 		E78EF34F24364C8900EB5938 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E78EF34E24364C8900EB5938 /* Preview Assets.xcassets */; };
 		E78EF35224364C8900EB5938 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E78EF35024364C8900EB5938 /* LaunchScreen.storyboard */; };
+		E78EF35B24364E4E00EB5938 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78EF35A24364E4E00EB5938 /* NetworkManager.swift */; };
+		E78EF35D24364F3000EB5938 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78EF35C24364F3000EB5938 /* PostData.swift */; };
+		E78EF362243653DF00EB5938 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78EF361243653DF00EB5938 /* DetailView.swift */; };
+		E78EF3642436570D00EB5938 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78EF3632436570D00EB5938 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,11 @@
 		E78EF34E24364C8900EB5938 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E78EF35124364C8900EB5938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E78EF35324364C8900EB5938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E78EF35A24364E4E00EB5938 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E78EF35C24364F3000EB5938 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		E78EF361243653DF00EB5938 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		E78EF3632436570D00EB5938 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		E78EF365243657F900EB5938 /* HackerNws_SwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HackerNws_SwiftUI.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +65,11 @@
 		E78EF34424364C8600EB5938 /* HackerNws_SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				E78EF365243657F900EB5938 /* HackerNws_SwiftUI.entitlements */,
+				E78EF35924364E3900EB5938 /* Models */,
 				E78EF34524364C8600EB5938 /* AppDelegate.swift */,
 				E78EF34724364C8600EB5938 /* SceneDelegate.swift */,
-				E78EF34924364C8600EB5938 /* ContentView.swift */,
+				E78EF35E2436538300EB5938 /* Views */,
 				E78EF34B24364C8900EB5938 /* Assets.xcassets */,
 				E78EF35024364C8900EB5938 /* LaunchScreen.storyboard */,
 				E78EF35324364C8900EB5938 /* Info.plist */,
@@ -73,6 +84,25 @@
 				E78EF34E24364C8900EB5938 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E78EF35924364E3900EB5938 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E78EF35A24364E4E00EB5938 /* NetworkManager.swift */,
+				E78EF35C24364F3000EB5938 /* PostData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E78EF35E2436538300EB5938 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E78EF34924364C8600EB5938 /* ContentView.swift */,
+				E78EF361243653DF00EB5938 /* DetailView.swift */,
+				E78EF3632436570D00EB5938 /* WebView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E78EF35D24364F3000EB5938 /* PostData.swift in Sources */,
+				E78EF362243653DF00EB5938 /* DetailView.swift in Sources */,
+				E78EF35B24364E4E00EB5938 /* NetworkManager.swift in Sources */,
 				E78EF34624364C8600EB5938 /* AppDelegate.swift in Sources */,
 				E78EF34824364C8600EB5938 /* SceneDelegate.swift in Sources */,
 				E78EF34A24364C8600EB5938 /* ContentView.swift in Sources */,
+				E78EF3642436570D00EB5938 /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +318,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HackerNws_SwiftUI/HackerNws_SwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"HackerNws_SwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = PNRKF3G2Z5;
@@ -295,6 +330,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.viachaslaupashaliuk.HackerNws-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,6 +340,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HackerNws_SwiftUI/HackerNws_SwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"HackerNws_SwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = PNRKF3G2Z5;
@@ -315,6 +352,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.viachaslaupashaliuk.HackerNws-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
